@@ -11,6 +11,9 @@
 |
 */
 
+// E-mail verification
+Route::get('/register/verify/{code}', 'GuestController@verify');
+
 Route::get('/', function () {
     return view('welcome');
 });

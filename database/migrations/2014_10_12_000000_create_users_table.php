@@ -26,9 +26,12 @@ class CreateUsersTable extends Migration
             $table->foreign('role_id')->references('id')->on('roles');
             $table->string('name');
             $table->string('last_name')->nullable();
+            $table->string('nickname')->nullable();
             $table->string('slug');
             $table->string('email')->unique();
             $table->string('password')->nullable();
+            $table->boolean('confirmed')->default(0);
+            $table->string('confirmation_code')->nullable();
             $table->string('picture')->nullable();
 
             //Cashier Columns
@@ -55,7 +58,7 @@ class CreateUsersTable extends Migration
             $table->string('hobby');
             $table->string('status');
             $table->string('relation');
-            $table->float('height');
+            $table->float('height', 3);
             $table->string('complexion');
             $table->string('skin');
             $table->string('heir');
@@ -79,7 +82,7 @@ class CreateUsersTable extends Migration
             $table->string('hobby');
             $table->string('status');
             $table->string('relation');
-            $table->float('height');
+            $table->float('height', 3);
             $table->string('complexion');
             $table->string('skin');
             $table->string('heir');
