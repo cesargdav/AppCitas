@@ -100,8 +100,9 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    App Citas
                 </div>
+
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>

@@ -10,15 +10,33 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
 
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- mega menu -->
+    <link href="css/mega-menu/mega_menu.css" rel="stylesheet" type="text/css" />
+
+    <!-- font-awesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Flaticon -->
+    <link href="css/flaticon.css" rel="stylesheet" type="text/css" />
+
+    <!-- Nirvana -->
+    <link href="css/nirvana.css" rel="stylesheet" type="text/css" />
+
+    <!-- General style -->
+    <link href="css/general.css" rel="stylesheet" type="text/css" />
+
+    <!-- main style -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 </head>
 <body>
     <div id="app">
@@ -71,5 +89,30 @@
             @yield('content')
         </main>
     </div>
+
+    <!--=================================
+    jquery -->
+
+    <!-- jquery  -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+
+    <!-- bootstrap -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+
+    <!-- appear -->
+    <script type="text/javascript" src="js/jquery.appear.js"></script>
+
+    <!-- bootstrap -->
+    <script type="text/javascript" src="js/mega-menu/mega_menu.js"></script>
+
+    <!-- counter -->
+    <script type="text/javascript" src="js/countdown/jquery.downCount.js"></script>
+
+
+
+    <!-- custom -->
+    <script type="text/javascript" src="js/custom.js"></script>
 </body>
 </html>
