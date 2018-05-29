@@ -17,3 +17,7 @@ Route::get('/register/verify/{code}', 'GuestController@verify');
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
